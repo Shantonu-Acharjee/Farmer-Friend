@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">   
+    <title>কৃষাণের বন্ধু</title>
+
+
+    <style>
+
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        
+
+        .Header-Section img{
+            object-fit: cover;
+            width: 100%;
+        }
+
+        
+
+        .details{
+            margin-top: 20px;
+        }
+
+
+
+        form {
+            text-align: center;
+            
+        }
+
+
+        form .upload {
+            display: block;
+            border-radius: 20px;
+            outline: none;
+            color: rgb(202, 10, 99);
+            border: 3px solid rgb(0, 0, 0);
+            margin: auto;
+            cursor: pointer;
+        }
+
+
+
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 15px;
+            color: #fff;
+            background-color: green;
+            margin-top: 20px;
+            font-weight: bold;
+            border: none;
+            border: 3px solid rgb(0, 0, 0);
+        }
+
+        
+        ::-webkit-file-upload-button {
+            color: white;
+            padding: 10px;
+            border: 2px solid rgb(129, 129, 129);
+            background-color: rgb(129, 129, 129);
+            
+
+        }
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        .image-gallary{
+            margin-top: 20px;
+        }
+
+
+
+
+        .container-image{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .container-image .heading{
+            margin-bottom: 20px;
+        }
+        
+        
+        .container-image .heading h1{
+            font-family: 'Courgette', cursive;
+            font-size: 3rem;
+            color: rgb(144 212 72);
+        }
+        
+        
+        
+        .container-image .box-image{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        
+        .container-image .box-image .dream{
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        
+        
+        .container-image .box-image .dream img{
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 3px solid rgb(212, 72, 165);
+            transition: transform .5s;
+        }
+        
+        
+        .container-image .box-image .dream img:hover{
+            transform: scale(1.04);
+        }
+        
+    
+        
+
+        
+
+        .home img{
+            width: 50px;
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            background-color: red; /* Set a background color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+    
+        
+        
+
+    </style>
+</head>
+
+
+
+
+
+<body>
+
+
+    <header>
+
+        <div class="Header-Section">
+            
+            <img src="static/images/1.svg" alt="">
+            
+        </div>
+
+    </header>
+
+
+
+
+
+    <section>
+
+        <div class="details">
+
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+                <input type="file" name="image" class="upload">
+                <input type="submit" value="ফলাফল দেখুন">
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="image-gallary">
+
+        <div class="container-image">
+
+            <div class="heading">
+                <h1>প্রজেক্ট বাস্তবায়নে</h1>
+            </div><!-- heading End -->
+    
+    
+            <div class="box-image">
+    
+                <div class="dream">
+                    <img src="static/images/1.jpeg" alt="">
+                    <img src="static/images/4.png" alt="">
+                    <img src="static/images/8.jpg" alt="">
+                </div>
+    
+    
+    
+                <div class="dream">
+                    <img src="static/images/3.JPG" alt="">
+                    <img src="static/images/5.jpg" alt="">
+                    <img src="static/images/9.jpg" alt="">
+                </div>
+    
+    
+    
+    
+                <div class="dream">
+                    
+                    <img src="static/images/2.jpg" alt="">
+                    <img src="static/images/6.jpeg" alt=""> 
+                    <img src="static/images/7.jpeg" alt="">
+                </div>
+    
+            </div><!-- box End -->
+            
+    
+    
+        </div><!-- container End -->
+
+    </section>
+
+
+    <section class="home">
+        <a href="http://10.0.0.174:5000/"><img src="static/images/house.svg" alt=""></a>
+    </section>
+
+
+
+
+</body>
+
+</html>
