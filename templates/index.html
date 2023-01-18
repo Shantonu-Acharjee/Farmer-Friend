@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">   
+    <title>কৃষাণের বন্ধু</title>
+
+</head>
+
+
+
+
+
+<body>
+
+
+    <header>
+
+        <div class="Header-Section">
+            
+            <img src="../static/images/1.svg" alt="">
+            
+        </div>
+
+    </header>
+
+
+
+
+
+    <section>
+
+        <div class="details">
+
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+                <input type="file" name="image" class="upload">
+                <input type="submit" value="ফলাফল দেখুন">
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="image-gallary">
+
+        <div class="container-image">
+
+            <div class="heading">
+                <h1>প্রজেক্ট বাস্তবায়নে</h1>
+            </div><!-- heading End -->
+    
+    
+            <div class="box-image">
+    
+                <div class="dream">
+                    <img src="../static/images/1.jpeg" alt="">
+                    <img src="../static/images/4.png" alt="">
+                    <img src="../static/images/8.jpg" alt="">
+                </div>
+    
+    
+    
+                <div class="dream">
+                    <img src="../static/images/3.JPG" alt="">
+                    <img src="../static/images/5.jpg" alt="">
+                    <img src="../static/images/9.jpg" alt="">
+                </div>
+    
+    
+    
+    
+                <div class="dream">
+                    
+                    <img src="../static/images/2.jpg" alt="">
+                    <img src="../static/images/6.jpeg" alt=""> 
+                    <img src="../static/images/7.jpeg" alt="">
+                </div>
+    
+            </div><!-- box End -->
+            
+    
+    
+        </div><!-- container End -->
+
+    </section>
+
+
+    <section class="home">
+        <a href="http://10.0.0.174:5000/"><img src="../static/images/house.svg" alt=""></a>
+    </section>
+
+
+
+
+</body>
+
+</html>

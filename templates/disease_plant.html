@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>কৃষাণের বন্ধু</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        audio{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+
+        .home img{
+            width: 50px;
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            background-color: red; /* Set a background color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+
+    <div>
+        <img src="../static/images/1.svg" class="w3-border w3-padding" alt="Indian AI Production"
+            style="width:100%">
+    </div>
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+                </span>
+
+                
+            </div>
+
+
+
+            
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;" class="text-center mb-5 content-h1 rounded"> {{pred_output}} </h1>
+                </div>
+
+                <h2>রোগের নাম : <span>পাতা চোষা এবং চিবানো পোকার আক্রমণ</span></h2>
+
+                <audio controls><source src="../static/তুলা গাছটি রোগে আক্রান্ত.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+
+                
+            </div>
+            
+        </div>
+
+
+        <h1>রোগের সমাধান :</h1>
+
+        <p><strong>যেকোন একটি কীটনাশক ব্যবহার করুন, যাতে <i>ফ্লোনিকামিড 50%/ থায়ামেথক্সাম 25% ডব্লিউজি/ ইমিডাক্লোপ্রিড 17.8 এসএল / অ্যাসিটামিপ্রিড 20% এসপি</i>  রয়েছে।</strong></p><p></p>
+        <audio controls><source src="../static/রোগের সমাধান.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+
+    </div>
+
+
+
+    <section>
+
+        <div class="container">
+            <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                class="text-center my-3 content-h1">
+                Recommended Products</h1>
+        </div>
+
+        <div class="container">
+
+
+            <div class="card-columns">
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/preet.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/ulala.png" alt="">
+                        <h3 class="card-text">Dose: 25-40 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px" class="img-fluid" src="/static/images/victor.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/confidor.png" alt="">
+                        <h3 class="card-text">Dose: 25-35 ml/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/panama.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/actara.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+           
+        </div>
+
+    </section>
+
+
+
+    <section class="home">
+        <a href="http://10.0.0.174:5000/"><img src="../static/images/house.svg" alt=""></a>
+    </section>
+
+</body>
+
+</html>

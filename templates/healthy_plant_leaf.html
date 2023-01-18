@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>কৃষাণের বন্ধু</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        .home img{
+            width: 50px;
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            background-color: red; /* Set a background color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <div>
+        <img src="../static/images/1.svg" class="w3-border w3-padding" alt="Indian AI Production"style="width:100%">
+    </div>
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+
+
+
+
+
+                <div class="details">
+
+                    <h2>তুলা গাছে কোনো রোগবালাই নেই।</h2>
+                    <p>গাছের পাতায় রাসায়নিক সার পরার কারনে পাতা পুড়ে গেছে, কিন্তু চিন্তা করার কোন প্রয়োজন নেই।</p>
+                    <audio controls><source src="../static/পাতায় রাসায়নিক সার.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio>
+
+                </div>
+
+                
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+
+
+
+
+    <section class="home">
+        <a href="http://10.0.0.174:5000/"><img src="../static/images/house.svg" alt=""></a>
+    </section>
+
+</body>
+
+</html>
