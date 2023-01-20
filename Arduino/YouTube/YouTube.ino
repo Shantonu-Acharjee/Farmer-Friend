@@ -15,13 +15,17 @@ int ldrtopr = 1; //top right LDR yellow
 int ldrbotl = 3; // bottom left LDR blue
 int ldrbotr = 0; // bottom right LDR orange
 
+int soil = 5;
+int pump = 7;
+
  void setup () 
  {
-  servohori.attach(10);
+  servohori.attach(11);
   servohori.write(0);
   servoverti.attach(9);
   servoverti.write(0);
   delay(500);
+  pinMode(pump, OUTPUT);
  }
 
 void loop()
@@ -33,6 +37,15 @@ void loop()
   int topr = analogRead(ldrtopr);
   int botl = analogRead(ldrbotl);
   int botr = analogRead(ldrbotr);
+  int soilState = analogRead(soil);
+
+  if (soilState > 100){
+    digitalWrite(pump, HIGH);
+  }
+
+  else{
+    digitalWrite(pump, LOW);
+  }
 
 
   // calculating average

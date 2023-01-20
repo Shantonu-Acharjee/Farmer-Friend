@@ -23,8 +23,8 @@ void setup(){
   pinMode(ldr3, INPUT);
   pinMode(ldr4, INPUT);
 
-  servo1.attach(9);
-  servo2.attach(10);
+  servo1.attach(10);
+  servo2.attach(11);
   
 }
 
@@ -42,12 +42,12 @@ void loop(){
 
 
 
-  if(pos1 >= 180){
-    pos1 = 180;
+  if(pos1 >= 170){
+    pos1 = 170;
   }
 
-  if(pos1 <= 0){
-    pos1 = 0;
+  if(pos1 <= 10){
+    pos1 = 10;
   }
 
 
@@ -55,13 +55,13 @@ void loop(){
 
 
 
-  if(pos2 >= 180){
-    pos2 = 180;
+  if(pos2 >= 170){
+    pos2 = 170;
   }
   
   
-  if(pos2 <= 0){
-    pos2 = 0;
+  if(pos2 <= 10){
+    pos2 = 10;
   }
 
 
